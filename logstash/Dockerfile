@@ -1,4 +1,4 @@
-FROM logstash:6.6.1
+FROM docker.elastic.co/logstash/logstash:6.6.2
 
 RUN bin/logstash-plugin install logstash-input-jdbc
 

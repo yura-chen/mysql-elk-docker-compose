@@ -12,12 +12,7 @@ CREATE TABLE poems (
 
 CREATE INDEX idx_poems_created ON poems(created);
 
-INSERT INTO poems (title, content, created, expires) VALUES (
-    'Riding bikes',
-    'Riding bikes is fun...\nfeeling the breeze,\nswoosh! Keep riding.\n\n– John Poet',
-    UTC_TIMESTAMP(),
-    DATE_ADD(UTC_TIMESTAMP(), INTERVAL 365 DAY)
-);
+INSERT INTO poems (title, content, created, expires) VALUES ('Riding bikes', 'Riding bikes is fun...\nfeeling the breeze,\nswoosh! Keep riding.\n\n– John Poet', UTC_TIMESTAMP(), DATE_ADD(UTC_TIMESTAMP(), INTERVAL 365 DAY);
 
 INSERT INTO poems (title, content, created, expires) VALUES (
     'Running uphill',
